@@ -60,6 +60,7 @@ nav {
 }
 #logo {
     margin-top: 100px;
+    max-width: 100%;
 }
 
 aside {
@@ -75,6 +76,7 @@ aside {
 .img-full-width img {
     display: block;
     width: 100%;
+    max-width: 100%;
 }
 
 #kiloren {
@@ -106,12 +108,24 @@ aside {
     float: left;
 }
 
-@media all and (max-width: 1024px)
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px)
 {
+    header {
+        height: 400px;
+    }
     nav, aside {
         display: none;
     }
     article#top-article {
         width: 100%;
+    }
+    body {
+        text-align: center;
+    }
+
+    #bottom-article {
+        width: 90%;
+        text-align: left;
     }
 }
