@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-image: url('../img/header-bg.png');
+    background: url('../img/header-bg.png') fixed;
     text-align: center;
     height: 500px;
     color: white;
@@ -104,4 +104,14 @@ aside {
 .float-lef
 {
     float: left;
+}
+
+@media all and (max-width: 1024px)
+{
+    nav, aside {
+        display: none;
+    }
+    article#top-article {
+        width: 100%;
+    }
 }
